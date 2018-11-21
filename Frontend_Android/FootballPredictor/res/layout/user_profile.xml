@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFriend"
+        android:layout_gravity="end"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/profile_buttons"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_shape"
+        android:text="Add Friend"/>
+   
+<LinearLayout android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_height="match_parent"
+        >
+        
+        
+		<LinearLayout android:layout_width="match_parent"
+		     android:layout_height="0dp"
+	        android:layout_weight="1"
+	       android:orientation="horizontal"
+		    android:gravity="center"
+		    >
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:gravity="center"
+	       	android:padding="2dp"
+	       	android:textSize="12sp"
+	       	android:textColor="@color/profile_buttons"
+	       	android:textStyle="bold"
+	       	
+	       	android:text="RANK:"
+	    	/>	
+	   
+	    <TextView
+	        android:id="@+id/rank"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="#RANK"
+	        android:textColor="@color/profile_points"
+	        android:textSize="15sp"
+	        android:textStyle="bold" />
+	   
+		    </LinearLayout>
+	
+        
+        
+    <ImageView
+    android:id="@+id/dp"
+    android:layout_width="90dp"
+    android:layout_gravity="center"
+    
+    android:layout_marginTop="5dp"
+    android:src="@null"
+    
+    android:layout_height="0dp"
+	android:layout_weight="4"
+	        
+   />
+		<TextView android:id="@+id/points"
+	        android:layout_height="0dp"
+	        android:layout_weight="1.5"
+	        android:layout_width="match_parent"
+	       	android:textSize="15sp"
+	       	android:padding="2dp"
+	       	android:textColor="@color/profile_points"
+	       	android:textStyle="bold"
+	       	android:layout_marginTop="5dp"
+	       	android:gravity="center"
+	       	android:text="@string/points_profile_page"
+	    	/>
+    </LinearLayout>
+	<LinearLayout android:id="@+id/profile_details"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"
+	    android:paddingLeft="15dp"
+	    android:paddingStart="15dp"
+	   	android:paddingRight="10dp"
+	    android:paddingEnd="10dp"
+	   	android:layout_gravity="center"
+	    android:background="@drawable/profile_shape"
+	    android:layout_height="wrap_content"
+	    
+	    android:gravity="center"
+    
+	    android:orientation="vertical">
+	
+	<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:textSize="12sp"
+	       	
+	       android:textColor="@color/profile_buttons"
+	       	android:textStyle="bold"
+	       		android:text="Name:  "
+	    	/>
+	    <TextView android:id="@+id/profile_name"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	       	android:padding="1dp"
+	       	android:textSize="16sp"
+	       	android:textColor="@color/profile_details"
+	    	/>
+	    </LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	        
+	        <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:textColor="@color/profile_buttons"
+	       	android:textSize="12sp"
+	       	android:text="Club:  "
+	    	/>
+	    <TextView android:id="@+id/fav_club"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	       	android:padding="1dp"
+	       	android:textSize="12sp"
+	       	android:text="Wait.."
+	       	
+	       	android:textColor="@color/profile_details"
+	    	/>
+		    </LinearLayout>
+
+		   <LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	    	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:textColor="@color/profile_buttons"
+	       	
+	       	android:textSize="12sp"
+	       	android:text="Predictions:"
+	    	/>
+	    <TextView android:id="@+id/number_of_predictions"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	       	android:padding="1dp"
+	       	
+	       	android:textColor="@color/profile_details"
+	       	android:textSize="12sp"
+	       	android:text="Wait.."
+	    	/>
+	    
+		</LinearLayout>	
+		
+		   <LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:textSize="12sp"
+	       	android:textColor="@color/profile_buttons"
+	       	android:text="Active Since:"
+	    	/>	
+	    		<TextView android:id="@+id/active_since"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	       	android:padding="1dp"
+	       	android:textSize="12sp"
+	       
+	       	android:textColor="@color/profile_details"	
+	       	android:text="Wait.."
+	    	/>	
+	    		
+	    
+	    
+	    </LinearLayout>
+		    		    
+		    
+	    	
+	    	
+	    	
+	    	
+	    
+	    
+	</LinearLayout>
+		    
+</LinearLayout>
+<ProgressBar android:id="@+id/loading"
+     style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"/>
+<TextView android:id="@+id/loading_text"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"/>
+<LinearLayout 
+    android:id="@+id/friends_info"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_margin="7dp"
+    android:layout_weight="1.5"
+    android:baselineAligned="false">
+	
+    
+	<LinearLayout android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="1.5"
+        	    android:gravity="center"
+    
+    android:layout_height="match_parent"
+   >
+	    
+    	<LinearLayout android:id="@+id/visitor_scores"
+    	    android:orientation="vertical"
+    	     android:layout_margin="3dp"
+			 android:background="@drawable/grouplist_shape"
+   			android:paddingRight="15dp"
+    		android:layout_width="match_parent"
+    		android:layout_gravity="center"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="0.6"
+    	    android:gravity="center"
+    	    
+    	>
+    	<TextView android:text="@string/lastmatchdaypoints"
+    	    android:layout_width="wrap_content"
+    	    android:textStyle="bold"
+    	    android:layout_height="wrap_content"/>
+    	
+    	<TextView android:id="@+id/latest_score"
+    	    android:text="00"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"/>
+    	
+    	<TextView android:text="@string/predictions"
+    	    android:layout_width="wrap_content"
+    	    android:textStyle="bold"
+    	    android:layout_height="wrap_content"/>
+    	
+    	<TextView android:id="@+id/latest_score_predictions" 
+    	    android:text="00"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"/>
+    	</LinearLayout>
+    	<ListView android:id="@+id/visitor_group_stats"
+    	     android:layout_margin="3dp"
+			 android:background="@drawable/grouplist_shape"
+   			 android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    		android:scrollbars="vertical"  
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="1"
+    	    android:gravity="center"
+    	    android:textColor="@color/profile_page_group_text"
+    	    android:textSize="12sp"
+    	    android:textStyle="italic"
+    	    
+    	/>
+    </LinearLayout>
+    <ListView
+    android:id="@+id/userFriends"
+    android:layout_width="0dp"
+    android:layout_margin="1dp"
+    android:paddingLeft="10dp"
+
+	   	android:textStyle="bold"
+	    android:paddingStart="10dp"
+	   	android:paddingRight="10dp"
+	    android:paddingEnd="10dp"
+	   	 
+	    android:background="@drawable/profile_groups_shape"
+	    android:textColor="#000"
+   			 android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:text="STATS" />
+
+    
+		    
+</LinearLayout>
+
+
+	
+</LinearLayout>

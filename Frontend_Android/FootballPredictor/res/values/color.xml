@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="radio_color">#272</color>
+    <color name="register_fields">#CCFFFFFF</color>
+    <color name="register_text">#222</color>
+    <color name="profile_buttons">#FFFF99</color>
+    <color name="profile_details">#FFF</color>
+    <color name="fixture">#FFFFb3</color>
+    <color name="profile_points">#FFFF9933</color>
+    <color name="fixture_text_color">#660000</color>
+    <color name="transparent">#44000033</color>
+    <color name="fixture_text">#e2e2e2</color>
+    <color name="offwhitetext">#f3f3f3</color>
+    <color name="offwhitetext2">#e4e4e4</color>
+    
+    <color name="profile_page_group_text">#000066</color>
+    
+</resources>

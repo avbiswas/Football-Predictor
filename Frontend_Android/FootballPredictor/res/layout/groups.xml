@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    
+    >
+<TextView
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:textSize="30sp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_height="wrap_content"
+        android:text="MY GROUPS"/>
+
+<Button android:id="@+id/createNewGroup"
+    android:text="@string/createNewGroup"
+    android:layout_width="0dp"
+    android:layout_weight="0.4"
+	    
+    android:layout_height="wrap_content"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_gravity="end"
+    android:background="@drawable/button_shape"
+    android:textColor="@color/fixture_text"
+    android:gravity="center"
+    android:layout_marginRight="10dp"/>
+
+</LinearLayout>
+<ListView android:id="@+id/myGroups"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    
+
+</LinearLayout>

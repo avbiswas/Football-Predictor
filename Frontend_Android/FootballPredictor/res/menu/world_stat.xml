@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	 <item
+        android:id="@+id/world_leaderboard"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/leaderboard"
+        />
+   
+     <item
+        android:id="@+id/world_matchday"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/matchday"
+        />
+     <item
+        android:id="@+id/world_match"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/matches"
+        />
+     
+       
+
+</menu>

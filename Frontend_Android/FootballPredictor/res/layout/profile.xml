@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+   
+<LinearLayout android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_height="match_parent"
+        >
+        
+        
+		<LinearLayout android:layout_width="match_parent"
+		     android:layout_height="0dp"
+	        android:layout_weight="1"
+	       android:orientation="horizontal"
+		    android:gravity="center"
+		    >
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:gravity="center"
+	       	android:padding="2dp"
+	       	android:textSize="12sp"
+	       	android:textColor="@color/profile_buttons"
+	       	android:textStyle="bold"
+	       	
+	       	android:text="RANK:"
+	    	/>	
+	   
+	    <TextView
+	        android:id="@+id/rank"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="#RANK"
+	        android:textColor="@color/profile_points"
+	        android:textSize="16sp"
+	        android:textStyle="bold" />
+	   
+		    </LinearLayout>
+	
+        
+        
+    <ImageView
+    android:id="@+id/dp"
+    android:layout_width="90dp"
+    android:layout_gravity="center"
+    
+    android:layout_marginTop="5dp"
+    android:src="@drawable/lei"
+    
+    android:layout_height="0dp"
+	android:layout_weight="4"
+	        
+   />
+		<TextView android:id="@+id/points"
+	        android:layout_height="0dp"
+	        android:layout_weight="1.5"
+	        android:layout_width="match_parent"
+	       	android:textSize="15sp"
+	       	android:padding="2dp"
+	       	android:textColor="@color/profile_points"
+	       	android:textStyle="bold"
+	       	android:layout_marginTop="5dp"
+	       	android:gravity="center"
+	       	android:text="@string/points_profile_page"
+	    	/>
+    </LinearLayout>
+	<LinearLayout android:id="@+id/profile_details"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"
+	    android:paddingLeft="15dp"
+	    android:paddingStart="15dp"
+	   	android:paddingRight="10dp"
+	    android:paddingEnd="10dp"
+	   	android:layout_gravity="center"
+	    android:background="@drawable/profile_shape"
+	    android:layout_height="wrap_content"
+	    
+	    android:gravity="center"
+    
+	    android:orientation="vertical">
+	
+	<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:textSize="12sp"
+	       	
+	       android:textColor="@color/profile_buttons"
+	       	android:textStyle="bold"
+	       		android:text="Name:  "
+	    	/>
+	    <TextView android:id="@+id/profile_name"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	       	android:padding="1dp"
+	       	android:textSize="14sp"
+	       	android:textColor="@color/profile_details"
+	    	/>
+	    </LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	        
+	        <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:layout_gravity="center_vertical"
+	       	android:textColor="@color/profile_buttons"
+	       	android:textStyle="bold"
+	       	android:textSize="12sp"
+	       	android:text="Club:  "
+	    	/>
+	    <ImageView android:id="@+id/fav_club"
+	        android:layout_height="30dp"
+	        android:layout_width="30dp"
+	       	android:layout_marginStart="30dp"
+	       	
+	       />
+		    </LinearLayout>
+
+		   <LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="1dp">
+	    	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:textColor="@color/profile_buttons"
+	       	android:textStyle="bold"
+	       	android:layout_gravity="center_vertical"
+	       	android:textSize="12sp"
+	       	android:text="Predictions:"
+	    	/>
+	    <TextView android:id="@+id/number_of_predictions"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	
+	       	android:layout_margin="1dp"
+	       	android:textColor="@color/profile_details"
+	       	android:textSize="14sp"
+	       	/>
+	    	</LinearLayout>	
+	
+	    
+		 	<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       	android:padding="1dp"
+	       	android:textSize="12sp"
+	       	
+	       android:textColor="@color/profile_buttons"
+	       	android:textStyle="bold"
+	       		android:text="No. of Groups:  "
+	    	/>
+	    <TextView android:id="@+id/profile_no_groups"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	       	android:layout_margin="1dp"
+	       	android:textSize="14sp"
+	       	android:textColor="@color/profile_details"
+	    	/>
+	    </LinearLayout>
+	    
+		</LinearLayout>
+<LinearLayout android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:gravity="center"
+		    android:layout_marginStart="2dp"
+		    
+		    android:layout_marginEnd="2dp"
+		    >
+		<Button
+	    android:id="@+id/buttonStats"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="10dp"
+	    android:background="@drawable/ic_poll_white_36dp"
+	    android:padding="4dp" />
+
+    <Button
+        android:id="@+id/buttonFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:background="@drawable/ic_face_white_36dp"
+        android:padding="4dp" />
+     
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_settings_white_36dp"
+        android:padding="4dp" />
+	    
+	</LinearLayout>
+	
+			    
+</LinearLayout>
+
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_margin="7dp"
+    android:layout_weight="0.7">
+	
+    
+	<LinearLayout android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    
+    android:layout_height="match_parent"
+   >
+	<TextView android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:background="@color/transparent"
+    	    
+	    android:textSize="10sp"
+	    android:textStyle="bold"
+	    android:text="@string/GroupListProfilePage"/>
+    
+    	<TextView android:id="@+id/group_stats"
+    	     android:layout_margin="3dp"
+			 android:background="@drawable/profile_groups_shape"
+   			 android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    		android:scrollbars="vertical"  
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center"
+    	    android:textColor="@color/profile_page_group_text"
+    	    android:textSize="16sp"
+    	    android:textStyle="italic"
+    	    
+    	/>
+    
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/md_stat"
+    android:layout_width="0dp"
+    android:layout_margin="1dp"
+     	android:paddingStart="7dp"
+	   	android:paddingEnd="7dp"
+	   	android:orientation="vertical"
+	    android:background="@drawable/button_shape"
+	    android:textColor="@color/profile_buttons"    
+	    android:layout_weight="1"
+	    android:gravity="center"
+    android:layout_height="match_parent"
+    >
+    	<TextView android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center"
+    	    android:textColorHighlight="@color/profile_buttons"
+    	    android:text="Last Matchday Points"/>
+    	
+    	
+	    		<TextView android:id="@+id/last_matchday_points"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	       	android:padding="1dp"
+	       	android:layout_marginTop="10dp"
+	       	android:textSize="20sp"
+		       android:gravity="center"
+	       	android:textColor="@color/profile_details"	
+	       	android:text="PTS"
+	    	/>	
+	    
+        </LinearLayout>
+
+    
+	 	    
+</LinearLayout>
+
+
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_weight="0.8"
+    android:layout_marginTop="3dp"
+    
+    android:layout_height="0dp"
+    >
+
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="3dp"
+    
+    android:layout_height="match_parent"
+    >
+   
+<TextView 
+    android:id="@+id/buttonPredict"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:background="@drawable/predict_shape"
+    android:textColor="@color/profile_buttons"
+    android:gravity="center"
+    android:padding="5dp"
+    android:text="PREDICT NOW"/>
+
+    <TextView
+    android:id="@+id/fixtures"
+    android:textStyle="italic"
+    android:layout_gravity="center"
+    android:paddingTop="1dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:gravity="center"
+    
+    android:layout_marginBottom="4dp"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/fixture_text_color"
+    android:background="@drawable/fixturelisthomepage"
+    android:scrollbars="vertical"
+    />
+
+</LinearLayout>
+<LinearLayout android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+<Button
+    android:id="@+id/buttonPL"
+    android:layout_width="70dp"
+    android:layout_height="75dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/pl2" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    
+    
+    android:layout_marginTop="4dp"
+    
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="@drawable/button_shape"
+    android:layout_gravity="bottom|end"
+    android:gravity="center"
+   
+     >
+
+    <Button
+        android:id="@+id/buttonGlobalStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_public_white_36dp"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="10dp"
+        
+       />
+
+    <Button
+        android:id="@+id/buttonFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_search_white_36dp"
+        android:adjustViewBounds="true"
+ />
+   
+       
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>	
+</LinearLayout>

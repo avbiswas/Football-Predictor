@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    
+ <LinearLayout android:id="@+id/form"
+     		android:orientation="vertical"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:gravity="center"
+     		>
+	<Space android:layout_width="match_parent"
+	    android:layout_height="40dp"/>
+     
+
+	
+    
+
+	   <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>        
+  
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            android:textStyle="bold"
+            android:text="@string/enter_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		android:gravity="center"         
+			
+            android:textSize="20sp"
+			android:padding="7dp"
+           		 android:background="@drawable/shape"
+            android:inputType="text"
+            android:ems="10" />
+
+
+    </LinearLayout>
+       <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>        
+          <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:text="@string/enter_email"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            
+            android:textSize="20sp"
+			android:padding="7dp"
+            android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		android:background="@drawable/shape"
+            android:gravity="center"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+	   <LinearLayout 
+     		android:orientation="horizontal"
+     		
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>        
+      
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            android:text="@string/fav_club"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		<Spinner
+    		android:id="@+id/editTextClub"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		
+            android:textSize="20sp"
+			android:padding="7dp"
+           	android:background="@drawable/shape"
+    		>
+		</Spinner>
+    </LinearLayout>
+    
+       <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>        
+  	        
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                             android:textStyle="bold"
+	                 android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+	                 android:text="@string/change_pass"
+	                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	        
+	         <EditText
+	             android:id="@+id/editTextPass"
+	              android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		android:gravity="center"
+	              
+            android:textSize="20sp"
+			android:padding="7dp"
+           		 android:background="@drawable/shape"
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:ems="10" />
+
+    </LinearLayout>
+
+
+
+	<Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="left"
+        android:background="@android:color/transparent"
+        android:textColor="#093"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="@string/submit" />
+   
+		<Space
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp" />
+	
+</LinearLayout>
+</ScrollView>

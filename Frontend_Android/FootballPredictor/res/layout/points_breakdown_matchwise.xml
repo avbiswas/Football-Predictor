@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+<TableRow 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#D22"
+   >
+	    
+	
+	
+	<TextView android:id="@+id/fixtures"
+	    android:layout_width="0dp"
+	    android:layout_weight="2"
+	    android:text="@string/predictions"
+	    
+	    android:textColor="@color/profile_details"
+	    android:gravity="center"
+	    
+	    android:layout_height="match_parent"/>
+	
+	<TextView android:id="@+id/score"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:text="@string/points2"
+	    android:gravity="center"
+	    
+	    android:textColor="@color/profile_details"
+	    android:layout_height="match_parent"/>
+	
+	
+</TableRow>
+<ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"
+        />
+    
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/display_matchday_stat"
+    android:orientation="vertical"
+    
+    android:background="@color/transparent" >
+</TableLayout>
+</ScrollView>
+
+</LinearLayout>

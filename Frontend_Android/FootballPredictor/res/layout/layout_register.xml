@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/contract_signing">
+    
+ <LinearLayout android:id="@+id/form"
+     		android:orientation="vertical"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:gravity="center"
+     		>
+	<Space android:layout_width="match_parent"
+	    android:layout_height="40dp"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/sign_up"
+         android:textColor="#444"
+         android:gravity="center"
+         android:textSize="50sp" />
+	
+     
+     
+     <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		android:focusableInTouchMode="true">
+         
+    		     
+         <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            android:text="@string/enter_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:ellipsize="start"
+            android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		
+            android:ems="10"
+            android:textSize="20sp"
+			android:padding="7dp"
+            android:gravity="center"
+            android:inputType="text" >
+
+         </EditText>
+         
+     </LinearLayout>
+     
+     
+     
+	 <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:text="@string/enter_email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		
+            android:textSize="20sp"
+			android:padding="7dp"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            android:textColor="@color/register_text"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+    
+     <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>        
+     		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:text="@string/fav_club"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+			<Spinner
+    		android:id="@+id/editTextClub"
+    		android:gravity="center"
+            android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		
+            android:textSize="20sp"
+			android:padding="7dp"
+    		android:background="@drawable/shape"
+    		android:layout_height="wrap_content"
+    		android:layout_width="match_parent"
+    		>
+			</Spinner>
+ </LinearLayout>   
+     <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>
+	        
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_marginLeft="10dp"
+            		 android:layout_marginRight="10dp"
+            	     android:textStyle="bold"
+	                 android:textColor="#333"
+	                 android:text="@string/nationality"
+	                 android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	
+	<RadioGroup android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:gravity="center">
+    	<RadioButton android:id="@+id/radio_indian"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/yes"
+        	android:layout_marginRight="10dp"
+        	
+        	android:layout_marginEnd="10dp"
+        	android:textStyle="bold"
+        	android:textColor="#111"
+        	android:onClick="onRadioButtonClicked"/>
+    	<RadioButton android:id="@+id/radio_not_indian"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#111"
+            android:textStyle="bold"
+        	android:text="@string/no"
+        	android:onClick="onRadioButtonClicked"/>
+	</RadioGroup>
+   </LinearLayout>
+	
+     <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>	      
+     		<TextView
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	                     android:textStyle="bold"
+	        	android:layout_marginLeft="10dp"
+            	android:layout_marginRight="10dp"
+            
+	         	android:textColor="#333"
+	          android:text="@string/enter_username"
+	          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	      <EditText
+	          android:id="@+id/editTextUserName"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:ems="10"
+	          android:gravity="center"
+            	android:inputType="text"
+            	android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		
+            android:textSize="20sp"
+			android:padding="7dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/register_text" />
+
+	</LinearLayout>  
+     <LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_marginTop="50dp"
+     		>
+	        
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_marginLeft="10dp"
+            		android:layout_marginRight="10dp"
+            
+	                 android:textStyle="bold"
+	                 android:textColor="#333"
+	                 android:text="@string/enter_pass"
+	                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	        
+	         <EditText
+	             android:id="@+id/editTextPass"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:gravity="center"
+            	android:inputType="text"
+            	android:layout_marginRight="10dp"
+    		android:layout_marginEnd="10dp"
+    		
+            android:textSize="20sp"
+			android:padding="7dp"
+			android:background="@drawable/shape"
+            	android:textColor="@color/register_text"
+            	android:ems="10" />
+
+    </LinearLayout>
+
+<Space
+		    android:layout_width="wrap_content"
+		    android:layout_height="30dp" />
+	<TextView
+	    	android:id="@+id/statusbar"	
+	    	android:gravity="center"
+	    	 android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textStyle="bold"
+	    	android:textColor="#777"
+	    	android:text="@string/default_status"/>    
+	<Space
+		    android:layout_width="wrap_content"
+		    android:layout_height="5dp" />
+
+	<Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:background="#CC229922"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/check_username_availability" />
+  
+	<Space
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp" />
+	
+</LinearLayout>
+
+</ScrollView>

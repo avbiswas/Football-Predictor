@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	
+	background: url(backgrounds/pl.png) 
+	 center center;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: stretch;
+
+}
+#header {
+    background-color:rgba(40,140,40,0.8);
+    
+    color:#FFF;
+    text-align:center;
+    padding:5px;
+}
+body{
+
+	text-align: center;
+}
+table{
+	border-color: green;
+	font-size: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+h1{
+	font-size: 130%;
+}
+h2{
+	font-size: 90%;
+}
+td,th{
+	padding: 10px;
+    text-align: center;
+
+	border:  2px solid #000;
+}
+tr:nth-child(even) {background-color: rgba(255,255,255,0.75)}
+tr:nth-child(odd) {background-color: rgba(168,168,168,0.75)}
+
+th{
+	background-color: rgba(0, 0, 128,0.75);
+	color: white;
+}
+.score{
+	background-color: rgba(240, 240, 240,0.75);
+	color:black;
+	font-size: 120%;
+	padding: 1%;
+	margin-top: 0.4%;
+	margin-bottom: 0.4%;
+
+
+}
+#standings table{
+	border-color: white;
+	font-size: 90%;
+    border-collapse: collapse;
+    font-family: cursive;
+    margin: auto;
+    margin-top: 5%;
+}
+#standings tr:nth-child(even) {background-color: rgba(255,255,255,0.75)}
+#standings tr:nth-child(odd) {background-color: rgba(168,168,168,0.75)}
+#standings tr:nth-child(n+19) {background-color: rgba(255, 153, 153,0.75)}
+#standings tr:nth-child(-n+5) {background-color: rgba(255, 255, 153,0.75)}
+
+#standings tr:nth-child(2) {background-color: rgba(0,200,0,0.75)}

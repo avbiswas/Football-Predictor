@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	
+	background: url(backgrounds/pl.png) 
+	 center center;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: stretch;
+
+}
+#generalinfo{
+	margin-left: 1%;
+	background: rgba(240,240,100,0.7);
+	padding : 1.4%;
+	text-align: left;
+	font-family: cursive;
+}
+
+#generalinfo .heading{
+
+	font-family: sans-serif;
+	font-size: 125%;
+	color:white;
+}
+img{
+	border-color: black; 
+}
+table{
+
+	border-color: white;
+	font-size: 90%;
+    border-collapse: collapse;
+    font-family: cursive;
+    margin: auto;
+    margin-top: 0.1%;
+}
+td,th{
+	padding: 10px;
+    text-align: center;
+
+	border:  2px solid #000;
+}
+tr:nth-child(even) {background-color: rgba(255,255,255,0.75)}
+tr:nth-child(odd) {background-color: rgba(168,168,168,0.75)}
+
+th{
+	background-color: rgba(0, 0, 128,0.75);
+	color: white;
+}
+#teaminfo tr{
+	padding: 10px;
+    text-align: center;
+    font-size: 110%;
+	border:  2px solid #000;
+}
+
+#teaminfo #results{
+	margin-top: 1%;
+	background: rgba(240,240,102,0.9);
+	font-size: 90%;
+	display: table;
+	padding: 1%;
+}
+#results table{
+	margin-top: 0.1%;
+       
+}
+.heading{
+	background-color: black;
+	color:white;
+
+	font-size: 125%;
+	padding:0.6%;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#fixtures{
+	margin-top: 1%;
+	background: rgba(240,240,102,0.9);
+	font-size: 90%;
+	display: table;
+	padding: 1%;
+}

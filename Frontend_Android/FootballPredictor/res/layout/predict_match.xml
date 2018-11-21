@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#0000"
+        
+    >
+	<ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginEnd="1dp"
+        android:layout_gravity="fill"
+        android:src="@drawable/ars"
+        android:contentDescription="@null"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:paddingLeft="2dp"
+   		android:paddingRight="2dp"
+   		
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    
+    android:orientation="vertical"
+    >
+    	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+	    
+		<TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+         android:layout_height="wrap_content"
+        android:textColor="@color/fixture_text"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textvS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        
+        android:textColor="@color/fixture_text"
+        android:layout_gravity="center"
+        
+        android:gravity="center"
+        android:text="@string/versus"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    
+    <TextView
+        android:id="@+id/textAway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        
+        android:textColor="@color/fixture_text"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    </LinearLayout>
+	    
+        	
+        <TextView
+        android:id="@+id/textStadium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        
+        android:textColor="@color/fixture_text"
+        android:gravity="center"
+        android:text="@string/stadium"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+         />
+    	
+        	
+        <TextView
+        android:id="@+id/textDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="10dp"
+       
+        android:textColor="@color/fixture_text"
+        android:gravity="center"
+        android:text="@string/date"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+    
+        
+        
+    </LinearLayout>
+    
+	<ImageView
+        android:id="@+id/away_logo"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginStart="1dp"
+        android:src="@drawable/ars"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+         />
+	</LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#0000"
+        android:layout_marginTop="10dp"
+       android:baselineAligned="false" 
+    >
+		 <LinearLayout 
+		android:id="@+id/homeLayout"
+		android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/grouplist_shape"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        
+    	>
+        
+        <NumberPicker
+        android:id="@+id/pickHomeScore"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="5dp"
+        
+        android:layout_marginBottom="5dp"
+        android:background="#272"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        />
+        
+        </LinearLayout>
+        
+		 
+		 
+		      <LinearLayout 
+		android:id="@+id/awayLayout"
+		android:orientation="vertical"
+       	android:layout_width="0dp"
+        android:layout_weight="1" 
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        
+        android:layout_marginStart="5dp"
+         android:padding="10dp"
+        android:background="@drawable/grouplist_shape"
+       
+    	>
+        
+		      <NumberPicker
+        android:id="@+id/pickAwayScore"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textAlignment="center"
+        android:dropDownWidth="150dp"
+         android:layout_marginTop="5dp"
+        
+        android:layout_marginBottom="5dp"
+        android:background="#272"
+       
+        android:layout_gravity="center"
+        android:prompt="@string/enter_away_score"
+        />
+		      
+		 
+        </LinearLayout>
+        
+        
+        
+        
+    </LinearLayout>
+
+    <Button 
+        android:id="@+id/save_prediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        
+        android:text="@string/savepredictions"
+        android:background="@drawable/predict_shape"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/profile_points"/>
+    
+</LinearLayout>
+    
+
+</ScrollView>

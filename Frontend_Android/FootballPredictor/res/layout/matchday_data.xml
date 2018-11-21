@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+        
+	<TextView android:id="@+id/md_no"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:textSize="16sp"
+	    
+	    android:textColor="@color/offwhitetext"
+	    android:gravity="center"
+	    android:layout_height="wrap_content"/>
+	
+	<TextView android:id="@+id/total_matches"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:textColor="@color/offwhitetext"
+	    android:textSize="16sp"
+	    android:padding="2dp"
+	    android:layout_marginStart="5dp"
+	    android:gravity="center"
+	    android:layout_height="wrap_content"/>
+	<TextView android:id="@+id/no_of_predictions"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:textSize="16sp"
+	    android:padding="2dp"
+	    android:textColor="@color/offwhitetext"
+	    android:gravity="center"
+	    
+	    android:layout_height="wrap_content"/>
+	<TextView android:id="@+id/md_points"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    android:textSize="16sp"
+	    android:textColor="@color/offwhitetext"
+	    android:padding="2dp"
+	    
+	    android:layout_height="wrap_content"/>
+	<TextView android:id="@+id/md_net_points"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:textSize="16sp"
+	    android:gravity="center"
+	    android:padding="2dp"
+	    android:textColor="@color/offwhitetext"
+	    android:layout_height="wrap_content"/>
+    
+</TableRow>

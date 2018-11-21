@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="team_list">
+        <item>@string/team1</item>
+        <item>@string/team2</item>
+        <item>@string/team3</item>
+        <item>@string/team4</item>
+        <item>@string/team5</item>
+        <item>@string/team6</item>
+        <item>@string/team7</item>
+        <item>@string/team8</item>
+        <item>@string/team9</item>
+        <item>@string/team10</item>
+        <item>@string/team11</item>
+        <item>@string/team12</item>
+        <item>@string/team13</item>
+        <item>@string/team14</item>
+        
+        <item>@string/team15</item>
+        <item>@string/team16</item>
+        <item>@string/team17</item>
+        <item>@string/team18</item>
+        
+        <item>@string/team19</item>
+        <item>@string/team20</item>
+    </string-array>  
+    <string-array name="Menu">
+        <item>Homepage</item>
+        <item>Groups</item>
+        <item>Upcoming Fixtures</item>
+        <item>Edit Profile</item>
+        
+    </string-array>
+    <string-array name="score">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>  
+    
+</resources>

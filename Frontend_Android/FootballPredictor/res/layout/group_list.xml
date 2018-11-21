@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grouplist_shape"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp" >
+    
+    <LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_marginTop="10dp"
+		
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="10dp"
+		android:layout_gravity="center"
+		android:layout_height="wrap_content"        
+        >
+        <TextView android:id="@+id/group_matchday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:textColor="@color/fixture_text"
+             android:layout_marginTop="5dp"
+           
+            android:text="MATCHDAY"/>
+        
+        <TextView android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/profile_buttons"
+             android:layout_marginTop="3dp"
+           
+            android:text="group name"/>
+        
+        <TextView android:id="@+id/group_strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:paddingLeft="20dp"
+            android:text="12"/>
+        <TextView android:id="@+id/group_max_pts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="20dp"
+            
+            android:textStyle="italic"
+            android:text="20"/>
+        <TextView android:id="@+id/group_avg_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="20dp"
+            android:text="1"/>
+    </LinearLayout>
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="0dp"
+	    android:layout_weight="0.5"
+	    android:background="@drawable/group_rank_shape"
+	    android:gravity="center"
+	    android:padding="5dp"
+	    android:layout_marginRight="15dp"
+	    
+	    android:layout_marginBottom="4dp"
+	    android:layout_marginTop="4dp"
+	    android:layout_height="match_parent"
+	    >
+	    	
+        <TextView android:id="@+id/group_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/profile_points"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="#2"/>
+        
+        <TextView android:id="@+id/group_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/profile_points"
+            android:textStyle="bold"
+            android:text="20"/>
+	</LinearLayout>
+	
+	
+</LinearLayout>

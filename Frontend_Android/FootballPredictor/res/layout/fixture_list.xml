@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fixture_shape"
+    android:layout_marginBottom="5dp"
+    >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	     android:paddingLeft="10dp"
+        
+	     android:paddingRight="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:orientation="horizontal"
+	    android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+	    
+		<TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+         android:layout_height="wrap_content"
+        android:text="United"
+        android:textColor="@color/fixture_text"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textvS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        
+        android:textColor="@color/fixture_text"
+        android:layout_gravity="center"
+        
+        android:gravity="center"
+        android:text="@string/versus"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    
+    <TextView
+        android:id="@+id/textAway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        
+        android:textColor="@color/fixture_text"
+        android:gravity="center"
+        android:text="Manchester City"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    
+    </LinearLayout>
+	    <CheckBox
+	        android:id="@+id/predict"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="end"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="right"
+	        android:layout_marginRight="4dp"
+	        android:clickable="false"
+	        android:focusable="false"
+	        />
+	 </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        
+        
+    >
+	<ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_marginRight="1dp"
+        android:layout_gravity="fill"
+        android:src="@drawable/ars"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:paddingLeft="5dp"
+   		android:paddingRight="5dp"
+   		
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    
+    android:orientation="vertical"
+    >
+    
+        	
+        <TextView
+        android:id="@+id/textStadium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        
+        android:textColor="@color/fixture_text"
+        android:gravity="center"
+        android:text="Stadium"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+         />
+    	
+        	
+        <TextView
+        android:id="@+id/textDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        
+        android:textColor="@color/fixture_text"
+        android:gravity="center"
+        android:text="Date"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+    
+        
+        
+    </LinearLayout>
+    
+	<ImageView
+        android:id="@+id/away_logo"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_marginLeft="1dp"
+        android:src="@drawable/ars"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+         />
+	</LinearLayout>
+    
+</LinearLayout>

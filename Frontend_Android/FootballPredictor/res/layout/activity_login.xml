@@ -1,0 +1,106 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    android:paddingLeft="120dp"
+    android:paddingStart="120dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    
+    android:paddingBottom="15dp"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+    <Space android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+   <LinearLayout android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       >
+       
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/login_shape"
+        android:ems="10"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        
+            android:textSize="20sp"
+			android:padding="7dp"
+        android:hint="@string/enter_uname_hint"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_shape"
+        android:ems="10"
+        
+            android:textSize="20sp"
+			android:padding="7dp"
+        android:hint="@string/enter_pass_hint"
+        android:inputType="textPassword" />
+
+    <CheckBox android:id="@+id/checkbox_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/remember"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:onClick="onCheckboxClicked"/>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/sign_in"
+        android:textColor="#008"
+        android:textSize="35sp" />
+    
+    <Button
+        android:id="@+id/button4"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        
+        android:text="@string/new_user"
+        android:textColor="#ff5"
+       	android:textStyle="bold"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/button2"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        
+        android:text="@string/forgot_password"
+        android:textColor="#ff5"
+        android:textSize="15sp" />
+    
+    
+    </LinearLayout>
+    
+</LinearLayout>
+ 

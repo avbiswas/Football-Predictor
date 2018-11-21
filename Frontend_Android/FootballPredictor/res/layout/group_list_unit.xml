@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp" >
+    <TextView android:id="@+id/group_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/profile_buttons"
+        android:text="yoyo"/>
+    <TextView android:id="@+id/group_rank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:layout_gravity="center|bottom"
+        android:textColor="#EEE"
+        android:text="yoyo"/>
+    <TextView android:id="@+id/group_points"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:layout_gravity="center|bottom"
+        android:textColor="#EEE"
+        android:text="yoyo"/>
+    
+</LinearLayout>
