@@ -13,7 +13,7 @@
 	}
 	else{
 
-		echo "BABA MAA KE BOLE DEBO.. CHEATING BAAJI BERYE JABE..";
+		echo "A non-admin tried to update a seeded table! POLICE! POLICE!!";
 	}
 
 
