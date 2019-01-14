@@ -10,7 +10,7 @@ Backend: SQL DB + PHP
 
 To create the database you can run the file: Football-Predictor/Backend_PHP/predictor/predictor.sql
 
-This used to be on appstore, but it is now discontinued coz the developer (ie Me) got a full time job and could not make time to continue maintaining this application.
+This used to be on playstore, but it is now discontinued coz the developer (ie Me) got a full time job and could not make time to continue maintaining this application.
 
 Since the original server is now down, I request you to set up an internal WAMP server and make the requisite changes in the below files:
 https://github.com/shekavi/Football-Predictor/blob/master/Frontend_Android/FootballPredictor/src/com/zombieinawaterbottle/footballpredictor/ServerParams.java
